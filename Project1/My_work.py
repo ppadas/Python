@@ -33,13 +33,13 @@ def get_symbol(text):
 window = Tk()
 window.geometry('800x500')
 filenames = ['text.txt', 'bigText.txt', 'my.txt']
-titels_file = open('titels.txt', 'r')
-titels = titels_file.readlines()
-titels_file.close()
-for i in range(len(titels)):
-    pair = titels[i].split("\n")
-    titels[i] = pair[0]
-window.title(titels[0])
+titles_file = open('titels.txt', 'r')
+titles = titles_file.readlines()
+titles_file.close()
+for i in range(len(titles)):
+    pair = titles[i].split("\n")
+    titles[i] = pair[0]
+window.title(titles[0])
 
 
 def changeFile():
@@ -48,7 +48,7 @@ def changeFile():
     rad3 = Radiobutton(window, text='-3', value=2, variable=selected)
 
     def clicked2():
-        lbl = Label(window, text=titels[8], font=("Arial Bold", 10))
+        lbl = Label(window, text=titles[8], font=("Arial Bold", 10))
         lbl.grid(column=3, row=5)
         entry = Entry(window, width=10)
         entry.grid(column=3, row=6)
@@ -57,11 +57,11 @@ def changeFile():
             file = open(entry.get(), "r")
             lines = file.readlines()
             if len(lines) > 1 or len(lines) == 0 or lines[0] == '':
-                lbl_err = Label(window, text=titels[14] + ": " + entry.get(),
+                lbl_err = Label(window, text=titles[14] + ": " + entry.get(),
                                 font=("Arial Bold", 10))
                 lbl_err.grid(column=3, row=5)
             else:
-                lbl_done = Label(window, text=titels[15] + ": " + entry.get(),
+                lbl_done = Label(window, text=titles[15] + ": " + entry.get(),
                                  font=("Arial Bold", 10))
                 lbl_done.grid(column=3, row=5)
                 filenames[selected.get()] = entry.get()
@@ -69,10 +69,10 @@ def changeFile():
             entry.destroy()
             button.destroy()
 
-        button = Button(window, text=titels[3], command=clicked3)
+        button = Button(window, text=titles[3], command=clicked3)
         button.grid(column=3, row=7)
 
-    btn = Button(window, text=titels[2], command=clicked2)
+    btn = Button(window, text=titles[2], command=clicked2)
     rad1.grid(column=3, row=1)
     rad2.grid(column=3, row=2)
     rad3.grid(column=3, row=3)
@@ -102,10 +102,10 @@ def clicked():
         print(text_out)
         if len(text_out) + 1 == len(text_in):
             if len(statistic) == 0:
-                lbl = Label(window, text=titels[13] + '\n' + titels[11],
+                lbl = Label(window, text=titles[13] + '\n' + titles[11],
                             font=("Arial Bold", 10))
             else:
-                lbl = Label(window, text=titels[10] + '\n' + titels[11],
+                lbl = Label(window, text=titles[10] + '\n' + titles[11],
                             font=("Arial Bold", 10))
                 time_end = time.time()
                 items = ''.join(stat_item_template.format(let, err) for let,
@@ -121,10 +121,10 @@ def clicked():
                 for i in list(statistic):
                     del statistic[i]
         else:
-            lbl = Label(window, text=titels[12], font=("Arial Bold", 10))
+            lbl = Label(window, text=titles[12], font=("Arial Bold", 10))
         lbl.grid(column=selected.get(), row=5)
 
-    button_ok = Button(window, text=titels[9], command=check)
+    button_ok = Button(window, text=titles[9], command=check)
     button_ok.grid(column=selected.get(), row=4)
     entry = Entry(window, validate="key", width=50)
     entry.grid(column=selected.get(), row=3)
@@ -140,17 +140,17 @@ def clicked():
     entry['validatecommand'] = (entry.register(test_val), '%P')
 
 selected = IntVar()
-rad1 = Radiobutton(window, text=titels[4], value=0, variable=selected)
-rad2 = Radiobutton(window, text=titels[5], value=1, variable=selected)
-rad3 = Radiobutton(window, text=titels[6], value=2, variable=selected)
-rad4 = Radiobutton(window, text=titels[7], value=10, variable=selected)
-btn = Button(window, text=titels[2], command=clicked)
+rad1 = Radiobutton(window, text=titles[4], value=0, variable=selected)
+rad2 = Radiobutton(window, text=titles[5], value=1, variable=selected)
+rad3 = Radiobutton(window, text=titles[6], value=2, variable=selected)
+rad4 = Radiobutton(window, text=titles[7], value=10, variable=selected)
+btn = Button(window, text=titles[2], command=clicked)
 rad1.grid(column=0, row=0)
 rad2.grid(column=1, row=0)
 rad3.grid(column=2, row=0)
 rad4.grid(column=3, row=0)
 btn.grid(column=4, row=0)
-btn2 = Button(window, text=titels[1], command=print_rools)
+btn2 = Button(window, text=titles[1], command=print_rools)
 btn2.grid(column=10, row=10)
 
 statistic = defaultdict(int)
