@@ -68,3 +68,101 @@ file:text.txt
 Time: 10.953000545501709sec
 Statistic:
 <h> - 12 <u> - 2 
+
+2020-05-02 19:52:36.317713
+File: text.txt
+Time: 1.1e+01 seconds
+Statistics:
+<h> - 4
+<v> - 2
+<g> - 1
+
+
+
+2020-05-02 19:52:37.360162
+File: text.txt
+Time: 1.2e+01 seconds
+Statistics:
+
+
+
+2020-05-02 19:52:37.846320
+File: text.txt
+Time: 1.3e+01 seconds
+Statistics:
+
+
+
+2020-05-02 19:52:37.992315
+File: text.txt
+Time: 1.3e+01 seconds
+Statistics:
+
+
+
+2020-05-02 19:52:38.112113
+File: text.txt
+Time: 1.3e+01 seconds
+Statistics:
+
+
+
+2020-05-02 19:52:38.280298
+File: text.txt
+Time: 1.3e+01 seconds
+Statistics:
+
+
+
+2020-05-02 19:54:53.007550
+File: text.txt
+Time: 9.84670376777649 seconds
+Statistics:
+<h> - 2
+<u> - 2
+
+
+
+2020-05-02 19:56:02.107945
+File: text.txt
+Time: 16.69882583618164 seconds
+Statistics:
+<h> - 2
+<v> - 6
+<u> - 2
+<g> - 1
+
+
+
+2020-05-02 19:56:03.263242
+File: text.txt
+Time: 17.85416054725647 seconds
+Statistics:
+
+
+
+2020-05-02 20:00:54.226401
+File: text.txt
+Time: 7.6318581104278564 seconds
+Statistics:
+<v> - 1
+<g> - 1
+
+
+
+2020-05-02 20:04:47.922004
+File: text.txt
+Time: 7.181621074676514 seconds
+Statistics:
+<h> - 4
+<v> - 7
+
+
+
+2020-05-02 20:45:37.890110
+File: text.txt
+Time: 9.639886856079102 seconds
+Statistics:
+<h> - 2
+<u> - 3
+
