@@ -166,3 +166,46 @@ Statistics:
 <h> - 2
 <u> - 3
 
+
+
+2020-05-21 01:51:37.028757
+File: text.txt
+Time: 6.778704404830933 seconds
+Statistics:
+<h> - 2
+
+
+
+2020-05-21 01:52:49.249399
+File: text.txt
+Time: 7.632637977600098 seconds
+Statistics:
+<h> - 2
+
+
+
+2020-05-21 02:09:40.796853
+File: text.txt
+Time: 11.23952031135559 seconds
+Statistics:
+<h> - 7
+<v> - 3
+<g> - 2
+
+
+
+2020-05-21 02:14:22.586147
+File: WorkFiles/text.txt
+Time: 8.036916017532349 seconds
+Statistics:
+<h> - 3
+
+
+
+2020-05-21 02:18:12.008749
+File: WorkFiles/text.txt
+Time: 7.379443407058716 seconds
+Statistics:
+<h> - 3
+<g> - 2
+
